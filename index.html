@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-section">
+        <h1>Word Counter</h1>
+        <p class="description">Paste or type your text below to get a real-time count of words, characters, sentences, and paragraphs.</p>
+    </header>
+
+    <main class="tool-container">
+        
+        <!-- Statistics Panel -->
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-value" id="wordCount">0</div>
+                <div class="stat-label">Words</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="charCount">0</div>
+                <div class="stat-label">Characters</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="sentenceCount">0</div>
+                <div class="stat-label">Sentences</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="paragraphCount">0</div>
+                <div class="stat-label">Paragraphs</div>
+            </div>
+        </div>
+
+        <!-- User Input Area -->
+        <textarea id="textInput" placeholder="Start typing or paste your text here..."></textarea>
+
+        <!-- Action Buttons -->
+        <div class="controls">
+            <button class="btn-primary" onclick="copyText()" id="copyBtn">Copy Text</button>
+            <button class="btn-secondary" onclick="clearText()">Clear</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
